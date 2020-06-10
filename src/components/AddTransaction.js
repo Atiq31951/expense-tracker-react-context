@@ -45,6 +45,7 @@ const AddTransaction = () => {
 
 const handleAddItems = (data, context) => {
   // console.log("hello I am here");
+  data.amount = Number(data.amount);
   context.dispatch({
     type: "ADD_ITEMS",
     payload: data,
